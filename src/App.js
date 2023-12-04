@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://www.narutodb.xyz/api/akatsuki")
+    fetch('https://cors-anywhere.herokuapp.com/https://www.narutodb.xyz/api/akatsuki')
       .then((response) => response.json())
       .then((user) =>
         this.setState(() => {
